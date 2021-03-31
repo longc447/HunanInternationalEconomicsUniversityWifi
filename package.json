@@ -1,11 +1,14 @@
 {
-    "name": "schollwifi",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "dev": "node index.js"
-    },
-    "author": "lc",
-    "license": "ISC"
+  "name": "schollwifi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js"
+  },
+  "author": "lc",
+  "license": "ISC",
+  "devDependencies": {
+    "request": "^2.88.2"
+  }
 }

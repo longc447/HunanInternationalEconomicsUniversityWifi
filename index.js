@@ -4,11 +4,9 @@ const net = require('./lib/net')
 
 log.set("正在监听网络连接。。。测试：http://www.baidu.com")
 setInterval(() => {
-    net.hasNet()
-        .then(res => {
-        }).catch(err => {
-            let p = phone.get()
-            log.set(p)
-            net.connectWifi(p)
-        })
+    net.hasNet().catch(res=>{
+        let p = phone.get()
+        net.connectWifi(p)
+        log.set(`断线重连，正在尝试账号：${p}`)
+    })
 }, 2000);
