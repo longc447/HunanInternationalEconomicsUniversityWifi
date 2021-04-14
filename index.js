@@ -27,7 +27,8 @@ function listenNet() {
                     useLongtimePhone=!useLongtimePhone;//间隔一个手机号使用长连接
                     nowphone = useLongtimePhone?phone.get():phone.getMaxTimePhone();
                     net.connectWifi(nowphone)
-                    log.set(`断线重连，正在尝试账号：${nowphone}`)
+                    start = Date.parse(new Date()) 
+                    log.set(`断线重连，正在尝试账号：${nowphone},重新计时`)
                 })
         }, 2000);
     } catch (error) {
