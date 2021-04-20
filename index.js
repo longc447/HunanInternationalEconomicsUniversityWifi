@@ -30,7 +30,7 @@ function listenNet() {
                     start = Date.parse(new Date()) 
                     log.set(`断线重连，正在尝试账号：${nowphone},重新计时`)
                 })
-        }, 2000);
+        }, 5000);
     } catch (error) {
         var spawn = require('child_process').spawn;
         log.set('程序异常终止')
