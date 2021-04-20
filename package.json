@@ -10,5 +10,9 @@
   "license": "ISC",
   "devDependencies": {
     "request": "^2.88.2"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.6",
+    "is-online": "^9.0.0"
   }
 }
